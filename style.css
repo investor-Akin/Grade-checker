@@ -83,81 +83,12 @@ form .create-account:hover {
     cursor: pointer;
 }
 
-.button {
-    position: relative;
-    padding: 10px 22px;
-    border-radius: 6px;
-    border: none;
-    text-align: center;
-    color: #fff;
-    cursor: pointer;
-    background-color: #1877f2;
-    transition: all 3s ease;
-}
-
-.button:active {
-    transform: scale(0.96);
-}
-
-.button:before,
-.button:after {
-    position: absolute;
-    content: "";
-    width: 150%;
-    left: 50%;
-    height: 100%;
-    transform: translateX(-50%);
-    z-index: -1000;
-    background-repeat: no-repeat;
-}
-
-.button:hover:before {
-    top: -70%;
-    background-image: radial-gradient(circle, #1877f2 20%, transparent 20%),
-        radial-gradient(circle, transparent 20%, #1877f2 20%, transparent 30%),
-        radial-gradient(circle, #1877f2 20%, transparent 20%),
-        radial-gradient(circle, #1877f2 20%, transparent 20%),
-        radial-gradient(circle, transparent 10%, #1877f2 15%, transparent 20%),
-        radial-gradient(circle, #1877f2 20%, transparent 20%),
-        radial-gradient(circle, #1877f2 20%, transparent 20%),
-        radial-gradient(circle, #1877f2 20%, transparent 20%),
-        radial-gradient(circle, #1877f2 20%, transparent 20%);
-    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
-        10% 10%, 18% 18%;
-    background-position: 50% 120%;
-    animation: greentopBubbles 3s ease;
-}
-
-@keyframes greentopBubbles {
-    0% {
-        background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
-            40% 90%, 55% 90%, 70% 90%;
-    }
-
-    50% {
-        background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
-            50% 50%, 65% 20%, 90% 30%;
-    }
-
-    100% {
-        background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
-            50% 40%, 65% 10%, 90% 20%;
-        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
-    }
-}
-
-.button:hover::after {
-    bottom: -70%;
-    background-image: radial-gradient(circle, #1877f2 20%, transparent 20%),
-        radial-gradient(circle, #1877f2 20%, transparent 20%),
-        radial-gradient(circle, transparent 10%, #1877f2 15%, transparent 20%),
-        radial-gradient(circle, #1877f2 20%, transparent 20%),
-        radial-gradient(circle, #1877f2 20%, transparent 20%),
-        radial-gradient(circle, #1877f2 20%, transparent 20%),
-        radial-gradient(circle, #1877f2 20%, transparent 20%);
-    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
-    background-position: 50% 0%;
-    animation: greenbottomBubbles 3s ease;
+button{
+    background-color: #43a6f7;
+    padding: 10px;
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 5px;
 }
 
 @keyframes greenbottomBubbles {
@@ -191,14 +122,22 @@ form .create-account:hover {
     }
 
     form input {
-        margin-top: 1rem;
-        padding: 5px; 
+        margin-top: 1rem;   
+        padding: 10px; 
         font-size: 1rem;
+        border: 1px solid #b1b1b1;
     }
 
     .result {
         font-size: 1.2rem;
+        font-weight: 600;
         margin-bottom: 5px; 
+        color: #b1b1b1;
+    }
+
+    .button{
+        color: white;
+        border: 1px solid #b1b1b1;
     }
 
     form .login {
