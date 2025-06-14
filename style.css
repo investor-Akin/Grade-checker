@@ -144,9 +144,6 @@ button{
         font-size: 1rem; 
         padding: 14px; 
     }
-    body{
-        overflow-x: hidden;
-    }
 
     form a {
         font-size: 0.9rem;
